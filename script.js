@@ -176,7 +176,7 @@ async function loadGitHubRepos() {
 
     try {
         const response = await fetch(
-            `https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=100`
+            `https://api.github.com/users/sofiamassaro/repos?sort=updated&per_page=100`
         );
 
         if (!response.ok) {
@@ -211,9 +211,9 @@ async function loadGitHubRepos() {
             <p class="repos-status">
                 Não foi possível carregar os repositórios agora.
                 Veja diretamente em
-                <a href="https://github.com/${GITHUB_USERNAME}" target="_blank" rel="noopener"
+                <a href="https://github.com/sofiamassaro" target="_blank" rel="noopener"
                    style="color:var(--lilac-dk);font-weight:600;">
-                   github.com/${GITHUB_USERNAME}</a>.
+                   github.com/sofiamassaro</a>.
             </p>
         `;
     }
