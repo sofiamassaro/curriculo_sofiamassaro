@@ -115,6 +115,7 @@ a { color: inherit; }
     font-family: 'Fraunces', serif;
     font-size: 1.15rem;
     letter-spacing: -0.01em;
+    color: var(--lilac);
 }
 .logo-word strong { font-weight: 600; color: var(--forest); }
 
@@ -414,7 +415,9 @@ a { color: inherit; }
 
 /* ---------- Projeto em destaque ---------- */
 .featured {
-    background: linear-gradient(135deg, var(--forest-dk), var(--forest));
+    background: linear-gradient(135deg,
+        color-mix(in srgb, var(--forest-dk) 70%, var(--paper)),
+        color-mix(in srgb, var(--forest)    70%, var(--paper)));
     color: #f7f5f0;
     border-radius: var(--radius);
     padding: 36px;
@@ -428,7 +431,7 @@ a { color: inherit; }
     right: -60px; top: -60px;
     width: 200px; height: 200px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(185,163,232,0.55), transparent 70%);
+    background: radial-gradient(circle, rgba(185,163,232,0.35), transparent 70%);
 }
 .featured-tag {
     display: inline-block;
